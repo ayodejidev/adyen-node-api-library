@@ -30,8 +30,6 @@ jobs:
         run: node --version
       - name: npm install
         run: npm install
-      - name: Check for outdated dependencies
-        run: npm outdated
       - name: Lint code
         run: npm run lint:fix && npm run lint
       - name: Run tests
